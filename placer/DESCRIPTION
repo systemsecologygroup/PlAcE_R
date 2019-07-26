@@ -1,0 +1,18 @@
+Package: placer
+Type: Package
+Title: PLastic ACcumulation Estimation using R (PLACER)
+Version: 0.1.0
+Authors@R: c(
+    person("Davi", "Castro-Tavares", email = "davi.tavares@leibniz-zmt.de",
+    role = c("aut")), person("Esteban", "Acevedo-Trejos", 
+    email = "esteban.acevedo@leibniz-zmt.de", role = c("cre")) )
+Description: Methods to estimate plastic accumulation using R. The package quantify the
+    confidence intervals for the prevalence of plastic debris in seabird's nests as a 
+    function of different sample sizes. Although, our focus is on seabirds, these methods
+    can be use to quantify plastic accumulation in other organims.
+Imports:
+    dplyr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
