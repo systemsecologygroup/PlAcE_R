@@ -5,7 +5,9 @@ Version: 0.1.0
 Authors@R: c(
     person("Davi", "Castro-Tavares", email = "davi.tavares@leibniz-zmt.de",
     role = c("aut")), person("Esteban", "Acevedo-Trejos", 
-    email = "esteban.acevedo@leibniz-zmt.de", role = c("cre")) )
+    email = "esteban.acevedo@leibniz-zmt.de", role = c("cre")),
+     person("Jailson", "F. Moura", 
+    email = "jailsonfm@gmail.com", role = c("cre")) )
 Description: Methods to estimate plastic accumulation using R. The package quantify the
     confidence intervals for the prevalence of plastic debris in seabird's nests as a 
     function of different sample sizes. Although, our focus is on seabirds, these methods
