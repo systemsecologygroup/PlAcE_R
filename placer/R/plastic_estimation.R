@@ -9,41 +9,6 @@
 # Date: July 2019
 #------------------------------------------------------------------------------
 
-
-#' Plastic prevalence probability
-#'
-#' \code{plastic.prev.prob} estimates the prevalence probability of plastic
-#' from a randomly selected sample of absence/presence observations of plastic
-#' debris.
-#'
-#' @param plastic_abs_pres numeric vector, containing a binary values with 0
-#'   or 'no' for absence of plastic, and 1 or 'yes' for presence of plastic.
-#' @param num_sample integer value, specifying the number of samples to
-#'   randomly draw from the observations.
-#' @return Prevalence probability of plastic debris in a given sample size.
-#'
-#' @examples
-#' plastic.prev.prob(rbinom(1000,1,0.5), 10)
-plastic.prev.prob <- function(plastic_abs_pres, num_sample){
-  if(length(unique(plastic_abs_pres)) != 2){
-    # check if a given variable is binary and in the adequate binary format
-    stop('input variable plastic_abs_pre is not a binary varible')
-  } else if(all(sort(unique(plastic_abs_pres)) != c(0,1)) &
-            all(sort(unique(plastic_abs_pres)) != c('no','yes'))){
-    stop('values of bynary variable must be 0 or no (for absence)
-         and 1 or yes (for presence)' )
-  } else {
-    # Draw a random sample from the observations of plastic debris and
-    # calculates the prevalence probability of plastic in this sample
-    rand_sample <- dplyr::sample_n(data.frame(plastic_abs_pres),
-                                   num_sample, replace = TRUE)
-    rand_sample_pres <- subset(rand_sample,
-                               rand_sample == 1 | rand_sample == 'yes')
-    plastic_prev <- nrow(rand_sample_pres) / nrow(rand_sample)
-    return(plastic_prev)
-  }
-}
-
 #' Confidence intervals of plastic prevalence probability
 #'
 #' Bootstrap simulations to estimate plastic prevalence probability.
@@ -80,4 +45,39 @@ plastic.ci <- function(plastic_abs_pres, max_sample_size = 300, bs_rep = 1000,
                       lower_ci = ci[1,], upper_ci = ci[2,])
 
   return(list(cidtf=cidtf, prevprob=outmat))
+}
+
+
+#' Plastic prevalence probability
+#'
+#' \code{plastic.prev.prob} estimates the prevalence probability of plastic
+#' from a randomly selected sample of absence/presence observations of plastic
+#' debris.
+#'
+#' @param plastic_abs_pres numeric vector, containing a binary values with 0
+#'   or 'no' for absence of plastic, and 1 or 'yes' for presence of plastic.
+#' @param num_sample integer value, specifying the number of samples to
+#'   randomly draw from the observations.
+#' @return Prevalence probability of plastic debris in a given sample size.
+#'
+#' @examples
+#' plastic.prev.prob(rbinom(1000,1,0.5), 10)
+plastic.prev.prob <- function(plastic_abs_pres, num_sample){
+  if(length(unique(plastic_abs_pres)) != 2){
+    # check if a given variable is binary and in the adequate binary format
+    stop('input variable plastic_abs_pre is not a binary varible')
+  } else if(all(sort(unique(plastic_abs_pres)) != c(0,1)) &
+            all(sort(unique(plastic_abs_pres)) != c('no','yes'))){
+    stop('values of bynary variable must be 0 or no (for absence)
+         and 1 or yes (for presence)' )
+  } else {
+    # Draw a random sample from the observations of plastic debris and
+    # calculates the prevalence probability of plastic in this sample
+    rand_sample <- dplyr::sample_n(data.frame(plastic_abs_pres),
+                                   num_sample, replace = TRUE)
+    rand_sample_pres <- subset(rand_sample,
+                               rand_sample == 1 | rand_sample == 'yes')
+    plastic_prev <- nrow(rand_sample_pres) / nrow(rand_sample)
+    return(plastic_prev)
+  }
 }
