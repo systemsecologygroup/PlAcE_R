@@ -22,5 +22,6 @@ from a randomly selected sample of absence/presence observations of plastic
 debris.
 }
 \examples{
+plastic.prev.prob(rbinom(1000,1,0.5), 1)
 plastic.prev.prob(rbinom(1000,1,0.5), 10)
 }

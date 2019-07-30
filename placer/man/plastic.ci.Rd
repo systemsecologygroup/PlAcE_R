@@ -36,4 +36,5 @@ sample sizes.
 }
 \examples{
 plastic.ci(rbinom(1000,1,0.5))
+plastic.ci(rbinom(1000,1,0.5), 30, 100)
 }

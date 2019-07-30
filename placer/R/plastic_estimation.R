@@ -32,6 +32,8 @@
 #'
 #' @examples
 #' plastic.ci(rbinom(1000,1,0.5))
+#' plastic.ci(rbinom(1000,1,0.5), 30, 100)
+#' @export
 plastic.ci <- function(plastic_abs_pres, max_sample_size = 300, bs_rep = 1000,
                        lower_ci = 0.025, upper_ci = 0.975){
 
@@ -61,7 +63,9 @@ plastic.ci <- function(plastic_abs_pres, max_sample_size = 300, bs_rep = 1000,
 #' @return Prevalence probability of plastic debris in a given sample size.
 #'
 #' @examples
+#' plastic.prev.prob(rbinom(1000,1,0.5), 1)
 #' plastic.prev.prob(rbinom(1000,1,0.5), 10)
+#' @export
 plastic.prev.prob <- function(plastic_abs_pres, num_sample){
   if(length(unique(plastic_abs_pres)) != 2){
     # check if a given variable is binary and in the adequate binary format

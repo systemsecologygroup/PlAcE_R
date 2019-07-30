@@ -31,6 +31,7 @@
 #'                 binomtest$cidtf$N,
 #'                 binomtest$cidtf$lower_ci,
 #'                 binomtest$cidtf$upper_ci)
+#' @export
 prevalence_plot <- function(prev_prob_mat, sample_sizes, lower_ci, upper_ci,
                             xlab = "Sample size",
                             ylab = "Plastic prevalence probability",

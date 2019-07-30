@@ -14,6 +14,8 @@ Description: Methods to estimate plastic accumulation using R. The package quant
     can be use to quantify plastic accumulation in other organims.
 Imports:
     dplyr
+Suggests:
+    knitr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
