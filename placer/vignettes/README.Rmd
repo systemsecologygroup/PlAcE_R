@@ -1,4 +1,4 @@
----
+install.packages(c("devtools", "roxygen2", "testthat", "knitr"))---
 title: "PlAcER: Plastic Accumulation Estimation using R"
 author: "Davi Castro-Tavares, Esteban Acevedo-Trejos & Jailson F. Moura"
 date: "`r Sys.Date()`"
@@ -42,6 +42,7 @@ ternsci<-placer::plastic.ci(cterns$debris_presence, 300, 1000)
 Plot the plastic preevalence probability and the confidence interval 
 as function of sample size: 
 ```
+ternsci<-placer::plastic.ci(cterns$debris_presence, 300, 1000)
 placer::prevalence_plot(ternsci$prevprob,
 ternsci$cidtf$N,
 ternsci$cidtf$lower_ci,
