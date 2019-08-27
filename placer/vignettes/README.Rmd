@@ -1,7 +1,8 @@
 ---
 title: "PlAcER: Plastic Accumulation Estimation using R"
-author:
-  - "Davi Castro-Tavares, Esteban Acevedo-Trejos & Jailson F. Moura"
+author: | 
+  | *Davi Castro-Tavares, Esteban Acevedo-Trejos & Jailson F. Moura*
+  | Leibniz Centre for Tropical Marine Research - ZMT
 date: "`r Sys.Date()`"
 output:
   pdf_document: # #html_vignette
@@ -14,7 +15,18 @@ vignette: >
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(dplyr)
+
+# Function to install packages if not installed
+check.packages <- function(pkg){
+        new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+        if (length(new.pkg)) 
+                install.packages(new.pkg, dependencies = TRUE)
+        sapply(pkg, require, character.only = TRUE)}
+
+# Load needed packages
+packages<-c("dplyr", "knitr", "kableExtra")
+check.packages(packages)
+
 ```
 
 ## Overview
@@ -31,9 +43,9 @@ Load data containing observations of precense and absence of plastic debris.
 ```{r, echo=FALSE}
 library("placer"); library(rmarkdown)
 library(knitr); library(kableExtra)
-#kable_styling(latex_options = "striped") %>% row_spec(0,bold=TRUE) 
 # data(ctern)
-ctern[1:10,] %>% tbl_df %>% select(-nest_code) %>% kable(align=rep('c', 8), linesep = "\\addlinespace", booktabs = TRUE)
+ctern[1:10,] %>% tbl_df %>% select(-nest_code) %>% kable(align=rep('c', 8), linesep = "\\addlinespace", booktabs = TRUE) %>% 
+  kable_styling(latex_options = "striped") %>% row_spec(0,bold=TRUE) 
 #  row_spec(0, bold = T, color = "white", background = "gray")
 ```
 
