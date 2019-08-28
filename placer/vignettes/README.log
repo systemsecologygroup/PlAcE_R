@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  28 AUG 2019 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.7)  28 AUG 2019 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,77 +812,79 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout5 = `README.toc'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 155.
+Package xcolor Warning: Incompatible color definition on input line 182.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 156.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 183.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 157
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 184
 .
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
-Package xcolor Warning: Incompatible color definition on input line 159.
+Package xcolor Warning: Incompatible color definition on input line 186.
 
 
-Package xcolor Warning: Incompatible color definition on input line 159.
-
-
-Package xcolor Warning: Incompatible color definition on input line 199.
-
-
-Package xcolor Warning: Incompatible color definition on input line 203.
-
-
-Package xcolor Warning: Incompatible color definition on input line 203.
-
-<README_files/figure-latex/plots-1.pdf, id=24, 405.515pt x 245.91875pt>
-File: README_files/figure-latex/plots-1.pdf Graphic file (type pdf)
-<use README_files/figure-latex/plots-1.pdf>
-Package pdftex.def Info: README_files/figure-latex/plots-1.pdf  used on input l
-ine 207.
-(pdftex.def)             Requested size: 405.52637pt x 245.92563pt.
-
-Underfull \hbox (badness 1466) in paragraph at lines 205--208
-[]\T1/lmr/m/n/10 (+20) Plot the plas-tic pree-va-lence prob-a-bil-ity and the c
-on-fi-dence in-ter-val as func-tion of sam-ple size:
- []
+Package xcolor Warning: Incompatible color definition on input line 186.
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
+
+Package xcolor Warning: Incompatible color definition on input line 228.
+
+
+Package xcolor Warning: Incompatible color definition on input line 234.
+
+
+Package xcolor Warning: Incompatible color definition on input line 234.
+
+<README_files/figure-latex/plots-1.pdf, id=48, 405.515pt x 245.91875pt>
+File: README_files/figure-latex/plots-1.pdf Graphic file (type pdf)
+<use README_files/figure-latex/plots-1.pdf>
+Package pdftex.def Info: README_files/figure-latex/plots-1.pdf  used on input l
+ine 244.
+(pdftex.def)             Requested size: 405.52637pt x 245.92563pt.
+
+Underfull \hbox (badness 1466) in paragraph at lines 242--245
+[]\T1/lmr/m/n/10 (+20) Plot the plas-tic pree-va-lence prob-a-bil-ity and the c
+on-fi-dence in-ter-val as func-tion of sam-ple size:
+ []
+
 [2 <./README_files/figure-latex/plots-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 (./README.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `README.out' has not changed.
-(rerunfilecheck)             Checksum: 3FE15F5730D359E3813282FA0555B624;351.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
+(rerunfilecheck)             Checksum: 496FA2645D8AE246E9F0BF27E49AA516;573.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 14364 strings out of 492649
- 208806 string characters out of 6129623
- 333641 words of memory out of 5000000
- 17982 multiletter control sequences out of 15000+600000
- 40587 words of font info for 51 fonts, out of 8000000 for 9000
+ 14392 strings out of 492649
+ 209126 string characters out of 6129623
+ 334712 words of memory out of 5000000
+ 17988 multiletter control sequences out of 15000+600000
+ 41653 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,7n,38p,231b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
-/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2018/
+ 34i,7n,38p,231b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm
 /lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on README.pdf (2 pages, 158084 bytes).
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on README.pdf (3 pages, 192280 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 8230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 8246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
