@@ -11,25 +11,29 @@
 
 #' Confidence intervals of plastic prevalence probability
 #'
-#' Bootstrap simulations to estimate plastic prevalence probability.
+#' Bootstrap simulations to estimate 95% bootstrapped CIs for the
+#' prevalence of debris obtained with different sample sizes.
 #' The confidence intervals are calculated in a sequence of varying
-#' sample sizes.
+#' sample sizes, i.e. 1,2,3...,n. It can be also used for defining
+#' sample sizes that would provide 95% CIs with the desired accuracy.
 #'
 #' @param plastic_abs_pres numeric vector, containing a binary values with 0
 #'   or no for absence of plastic, and 1 or yes for presence of plastic.
 #' @param max_sample_size integer, specifying the maximum number of
 #'   samples to use for estimating the prevalence of plastic debris.
-#'   By default 300 samples.
+#'   By default 300 samples. Increasing sample sizes substantially increases
+#'   compuational time.
 #' @param bs_rep integer, specifying the number of bootstrap replications.
 #'   By default 1000 replications.
 #' @param lower_ci numeric, specifying lower confidence interval.
-#'   By default 2.5\%.
+#'   By default 2.5\%, based on Efron and Tibshirani (1993)
 #' @param upper_ci numeric, specifying upper confidence interval.
-#'   By default 97.5\% default.
+#'   By default 97.5\% default, based on Efron and Tibshirani (1993).
 #' @return A list with a data frame with estimated confidence intervals,
-#'   and with a matrix with prevalence probability of plastic debirs for all
-#'   sample sizes and their bootstrap replicates
-#'
+#'   and with a matrix with prevalence probability of plastic debris for all
+#'   sample sizes and their estimated prevalence of debris.
+#' @references Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap.
+#'  Boca Raton: Chapman & Hall.
 #' @examples
 #' plastic.ci(rbinom(1000,1,0.5))
 #' plastic.ci(rbinom(1000,1,0.5), 30, 100)
