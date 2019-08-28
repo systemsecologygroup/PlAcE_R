@@ -29,10 +29,9 @@ install.packages('placer')
 Load data containing observations of precense and absence of plastic debris.   
 ```{r, echo=FALSE}
 library("placer"); library(rmarkdown)
-library(knitr); library(kableExtra)
+library(knitr);
 # data(ctern)
-ctern[1:10,] %>% tbl_df %>% select(-nest_code) %>% kable(align=rep('c', 8), linesep = "\\addlinespace", booktabs = TRUE) %>% 
-  kable_styling(latex_options = "striped") %>% row_spec(0,bold=TRUE) 
+ctern[1:10,] %>% tbl_df %>% select(-nest_code) %>% kable(align=rep('c', 8), linesep = "\\addlinespace", booktabs = TRUE)
 #  row_spec(0, bold = T, color = "white", background = "gray")
 ```
 
