@@ -7,3 +7,18 @@ northern*
 *.csv
 placer.Rcheck*
 *DS_Store
+placer 2/vignettes/README.Rmd
+placer 2/vignettes/README.log
+placer 2/vignettes/README.html
+placer 2/R/plastic_prev_plots.R
+placer 2/R/plastic_estimation.R
+placer 2/R/data.R
+placer 2/NAMESPACE
+placer 2/man/prevalence_plot.Rd
+placer 2/man/plastic.prev.prob.Rd
+placer 2/man/plastic.ci.Rd
+placer 2/man/ctern.Rd
+placer 2/LICENSE
+placer 2/DESCRIPTION
+placer 2/data/ctern.RData
+placer 2/vignettes/README.tex
