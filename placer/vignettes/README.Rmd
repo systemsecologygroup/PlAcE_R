@@ -1,6 +1,8 @@
 ---
 title: "PlAcER: Plastic Accumulation Estimation using R"
-author: "Davi Castro-Tavares, Esteban Acevedo-Trejos & Jailson F. Moura"
+author: | 
+  | *Davi Castro-Tavares, Esteban Acevedo-Trejos & Jailson F. Moura*
+  | Leibniz Centre for Tropical Marine Research - ZMT
 date: "`r Sys.Date()`"
 output:
   pdf_document: # #html_vignette
@@ -13,7 +15,18 @@ vignette: >
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(dplyr)
+
+# Function to install packages if not installed
+check.packages <- function(pkg){
+        new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+        if (length(new.pkg)) 
+                install.packages(new.pkg, dependencies = TRUE)
+        sapply(pkg, require, character.only = TRUE)}
+
+# Load needed packages
+packages<-c("dplyr", "knitr", "kableExtra")
+check.packages(packages)
+
 ```
 
 ## Overview
