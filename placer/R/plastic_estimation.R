@@ -29,9 +29,9 @@
 #'   By default 2.5\%, based on Efron and Tibshirani (1993)
 #' @param upper_ci numeric, specifying upper confidence interval.
 #'   By default 97.5\% default, based on Efron and Tibshirani (1993).
-#' @return A list with a data frame with estimated confidence intervals,
-#'   and with a matrix with prevalence probability of plastic debris for all
-#'   sample sizes and their estimated prevalence of debris.
+#' @return A list (cidtf) with a data frame with sample sizes, mean CI,
+#' lower CI, upper CI, and a matrix (prevprob) with prevalence probability
+#' of plastic debris for all sample sizes and their estimated prevalence of debris.
 #' @references Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap.
 #'  Boca Raton: Chapman & Hall.
 #' @examples
