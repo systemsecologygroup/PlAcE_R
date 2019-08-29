@@ -6,7 +6,7 @@ northern*
 .git*
 *.csv
 placer.Rcheck*
-*DS_Store
+.DS_Store
 placer 2/vignettes/README.Rmd
 placer 2/vignettes/README.log
 placer 2/vignettes/README.html
