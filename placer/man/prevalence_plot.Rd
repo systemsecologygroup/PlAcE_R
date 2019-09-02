@@ -9,8 +9,9 @@ prevalence_plot(prev_prob_mat, sample_sizes, lower_ci, upper_ci,
   colobs = "grey", colci = "#64B5F6")
 }
 \arguments{
-\item{prev_prob_mat}{numeric matrix, containing plastic prevalence probability
-with dimensions (samples_size, bootstrap_replicates).}
+\item{prev_prob_mat}{numeric matrix (prevprob), containing plastic prevalence values
+obtained with the function plastic.ci(), sample sizes (cidtf$N), lower cis (cidtf$lower_ci),
+and upper cis (cidtf$upper_ci), also obtained with function plastic.ci().}
 
 \item{sample_sizes}{numeric vector, containing sequence of sample size used to
 estimate the confidence intervals \code{plastic.ci}.}

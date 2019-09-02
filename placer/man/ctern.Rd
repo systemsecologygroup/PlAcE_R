@@ -16,7 +16,7 @@
   \item{debris_presence}{debris presence absence, add more info}
 }}
 \source{
-Tavares et al. ...
+Tavares et al. 2019 Submitted to Methods in Ecology and Evolution.  ...
 }
 \usage{
 ctern
