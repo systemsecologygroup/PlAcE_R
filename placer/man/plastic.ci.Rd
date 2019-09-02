@@ -31,17 +31,21 @@ lower CI, upper CI, and a matrix (prevprob) with prevalence probability
 of plastic debris for all sample sizes and their estimated prevalence of debris.
 }
 \description{
-Bootstrap simulations to estimate 95% bootstrapped CIs for the
+Bootstrap simulations to estimate 95\% bootstrapped CIs for the
 prevalence of debris obtained with different sample sizes.
+}
+\note{
 The confidence intervals are calculated in a sequence of varying
-sample sizes, i.e. 1,2,3...,n. It can be also used for defining
-sample sizes that would provide 95% CIs with the desired accuracy.
+sample sizes, i.e. 1,2,3...,n and the function can be also used for defining
+sample sizes that would provide 95\% CIs with the desired accuracy.
 }
 \examples{
-plastic.ci(rbinom(1000,1,0.5))
 plastic.ci(rbinom(1000,1,0.5), 30, 100)
 }
 \references{
 Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap.
  Boca Raton: Chapman & Hall.
+}
+\seealso{
+\code{\link{plastic.prev.prob}}, \code{\link{prevalence_plot}}
 }

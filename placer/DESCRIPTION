@@ -1,6 +1,6 @@
 Package: placer
 Type: Package
-Title: PLastic ACcumulation Estimation using R (PLACER)
+Title: PLastic ACcumulation Estimate using R (PLACER)
 Version: 0.1.2
 Authors@R: c(
     person("Davi", "Castro-Tavares", email = "davi.tavares@leibniz-zmt.de",
@@ -8,8 +8,8 @@ Authors@R: c(
     email = "esteban.acevedo@leibniz-zmt.de", role = c("aut")),
      person("Jailson", "F. Moura", 
     email = "jailsonfm@gmail.com", role = c("aut")) )
-Description: A computational toolbox for performing simulations on the prevalence 
-    of debris in bird nests, based on bootstrap replicates. The package allows for 
+Description: A package for performing simulations on the prevalence of plastic
+    debris in bird nests, and based on bootstrap replicates. The package allows for 
     calculating bootstrapped 95% confidence intervals for the estimated prevalence 
     of debris. Combined with a Bayesian approach, the resampling simulations can 
     be also used to define appropriate sample sizes to detect prevalence of plastics. 
@@ -17,11 +17,9 @@ Description: A computational toolbox for performing simulations on the prevalenc
     intervals and define sample sizes for the prevalence of plastics ingested by any 
     other organisms. The method is described in Tavares et al. Submitted to Methods 
     in Ecology and Evolution. 
-Imports:
-    dplyr
-Suggests:
-    knitr,
-    testthat
+Depends: R (>= 3.5.0), stats, graphics
+Suggests: dplyr, knitr, rmarkdown, kableExtra
+VignetteBuilder: rmarkdown, knitr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

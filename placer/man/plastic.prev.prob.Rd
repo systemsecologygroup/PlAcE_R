@@ -25,3 +25,6 @@ debris.
 plastic.prev.prob(rbinom(1000,1,0.5), 1)
 plastic.prev.prob(rbinom(1000,1,0.5), 10)
 }
+\seealso{
+\code{\link{plastic.ci}}, \code{\link{prevalence_plot}}
+}

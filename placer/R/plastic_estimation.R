@@ -9,13 +9,11 @@
 # Date: July 2019
 #------------------------------------------------------------------------------
 
+
 #' Confidence intervals of plastic prevalence probability
 #'
-#' Bootstrap simulations to estimate 95% bootstrapped CIs for the
+#' Bootstrap simulations to estimate 95\% bootstrapped CIs for the
 #' prevalence of debris obtained with different sample sizes.
-#' The confidence intervals are calculated in a sequence of varying
-#' sample sizes, i.e. 1,2,3...,n. It can be also used for defining
-#' sample sizes that would provide 95% CIs with the desired accuracy.
 #'
 #' @param plastic_abs_pres numeric vector, containing a binary values with 0
 #'   or no for absence of plastic, and 1 or yes for presence of plastic.
@@ -34,8 +32,11 @@
 #' of plastic debris for all sample sizes and their estimated prevalence of debris.
 #' @references Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap.
 #'  Boca Raton: Chapman & Hall.
+#' @seealso \code{\link{plastic.prev.prob}}, \code{\link{prevalence_plot}}
+#' @note The confidence intervals are calculated in a sequence of varying
+#' sample sizes, i.e. 1,2,3...,n and the function can be also used for defining
+#' sample sizes that would provide 95\% CIs with the desired accuracy.
 #' @examples
-#' plastic.ci(rbinom(1000,1,0.5))
 #' plastic.ci(rbinom(1000,1,0.5), 30, 100)
 #' @export
 plastic.ci <- function(plastic_abs_pres, max_sample_size = 300, bs_rep = 1000,
@@ -65,10 +66,11 @@ plastic.ci <- function(plastic_abs_pres, max_sample_size = 300, bs_rep = 1000,
 #' @param num_sample integer value, specifying the number of samples to
 #'   randomly draw from the observations.
 #' @return Prevalence probability of plastic debris in a given sample size.
-#'
+#' @seealso \code{\link{plastic.ci}}, \code{\link{prevalence_plot}}
 #' @examples
 #' plastic.prev.prob(rbinom(1000,1,0.5), 1)
 #' plastic.prev.prob(rbinom(1000,1,0.5), 10)
+#' @importFrom stats quantile
 #' @export
 plastic.prev.prob <- function(plastic_abs_pres, num_sample){
   if(length(unique(plastic_abs_pres)) != 2){

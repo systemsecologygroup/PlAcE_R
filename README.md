@@ -1,9 +1,9 @@
-# PlAcER: Plastic Accumulation Estimation using R
+# PlAcER: Plastic Accumulation Estimate using R
 
 
 > ## Overview
 
-A computational toolbox for performing simulations on the prevalence of debris in bird nests, based on bootstrap replicates. The package allows for calculating bootstrapped 95% confidence intervals for the estimated prevalence of debris. CIs are taken as the 2.5 and 97.5 percentiles of the distributions resulting from each sample size (Efron & Tibshirani, 1993). Combined with a Bayesian approach for detecting change points in a curve with values of prevalence as functions of sample size, i.e. number of nests, the resampling simulations can be also used to define appropriate sample sizes to detect prevalence of plastics. The method has wide application, and can also be applied to estimate confidence intervals and define sample sizes for the prevalence of plastics ingested by any other organisms. The method is described in Tavares et al. Submitted to Methods in Ecology and Evolution.
+A computational toolbox for performing simulations on the prevalence of debris in bird's nests, based on bootstrap replicates. The package allows for calculating bootstrapped 95% confidence intervals (CI) for the estimated prevalence of debris. CIs are taken as the 2.5 and 97.5 percentiles of the distributions resulting from each sample size (Efron & Tibshirani, 1993). Combined with a Bayesian approach for detecting change points in a curve with values of prevalence as functions of sample size, i.e. number of nests, the resampling simulations can be also used to define appropriate sample sizes to detect prevalence of plastics. The method has wide application, and can also be applied to estimate confidence intervals and define sample sizes for the prevalence of plastics ingested by any other organisms. The method is described in Tavares et al. Submitted to Methods in Ecology and Evolution.
 
 > ## Features
 
