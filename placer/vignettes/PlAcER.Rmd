@@ -6,7 +6,9 @@ author: |
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{PlAcER} %\VignetteEngine{knitr::rmarkdown} \usepackage[utf8]{inputenc}
+  %\VignetteIndexEntry{placer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}

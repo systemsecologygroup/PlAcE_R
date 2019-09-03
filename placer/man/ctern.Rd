@@ -15,9 +15,6 @@
   \item{nest_code}{nest code, add more info}
   \item{debris_presence}{debris presence absence, add more info}
 }}
-\source{
-Tavares et al. 2019 Submitted to Methods in Ecology and Evolution.  ...
-}
 \usage{
 ctern
 }
@@ -25,5 +22,8 @@ ctern
 A dataset containing absence and presence observations
 of plastic debris for the Caspian terns in the coast
 of Senegal.
+}
+\references{
+Tavares et al. 2019 Submitted to Methods in Ecology and Evolution.
 }
 \keyword{datasets}

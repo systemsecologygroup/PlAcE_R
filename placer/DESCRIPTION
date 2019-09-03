@@ -17,9 +17,9 @@ Description: A package for performing simulations on the prevalence of plastic
     intervals and define sample sizes for the prevalence of plastics ingested by any 
     other organisms. The method is described in Tavares et al. Submitted to Methods 
     in Ecology and Evolution. 
-Depends: R (>= 3.5.0), stats, graphics
+Depends: R (>= 3.5.0)
 Suggests: dplyr, knitr, rmarkdown, kableExtra
-VignetteBuilder: rmarkdown, knitr
+VignetteBuilder: knitr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
