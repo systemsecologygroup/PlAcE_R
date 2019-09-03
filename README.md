@@ -3,7 +3,7 @@
 
 > ## Overview
 
-A computational toolbox for performing simulations on the prevalence of debris in bird's nests, based on bootstrap replicates. The package allows for calculating bootstrapped 95% confidence intervals (CI) for the estimated prevalence of debris. CIs are taken as the 2.5 and 97.5 percentiles of the distributions resulting from each sample size (Efron & Tibshirani, 1993). Combined with a Bayesian approach for detecting change points in a curve with values of prevalence as functions of sample size, i.e. number of nests, the resampling simulations can be also used to define appropriate sample sizes to detect prevalence of plastics. The method has wide application, and can also be applied to estimate confidence intervals and define sample sizes for the prevalence of plastics ingested by any other organisms. The method is described in Tavares et al. Submitted to Methods in Ecology and Evolution.
+A computational toolbox for performing simulations on the prevalence of debris in bird's nests, based on bootstrap replicates. The package allows for calculating bootstrapped 95% confidence intervals (CI) for the estimated prevalence of debris. CIs are taken as the 2.5 and 97.5 percentiles of the distributions resulting from each sample size (Efron & Tibshirani, 1993). Combined with a Bayesian approach for detecting change points in a curve with values of prevalence as functions of sample size, i.e. number of nests, the resampling simulations can be also used to define appropriate sample sizes to detect prevalence of plastics. The method has wide application, and can also be applied to estimate confidence intervals and define sample sizes for the prevalence of plastics ingested by any other organisms.
 
 > ## Features
 
@@ -53,7 +53,7 @@ Where the user must firts specify the calculated prevalence probability as obtai
 
 > ## Where to get help
 
-placer_R@gmail.com for questions about placer usage and more general questions on bootstrap simulations and applications to frequency data.
+For questions or issues about placer usage and more general questions on bootstrap simulations and applications to frequency data please use github repository (https://github.com/systemsecologygroup/PlAcE_R).
 
 > ## References
 
@@ -61,4 +61,4 @@ Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap. Boca Raton
 
 Tavares, D. C., Moura, J. F., & Merico, A. (2019). Anthropogenic debris accumulated in nests of seabirds in an uninhabited island in West Africa. Biological Conservation, 236, 586–592.
 
-Tavares, D.C., Moura, J.F., Acevedo-Trejos, E., Crawford, M., Makhado, A., Lavers, J.L., Witteveen, M., Ryan, P., Merico, A. Submitted to Methods in Ecology and Evolution. 2019.
+Tavares, D.C., Moura, J.F., Acevedo-Trejos, E., Crawford, M., Makhado, A., Lavers, J.L., Witteveen, M., Ryan, P., Merico, A. Submitted.
