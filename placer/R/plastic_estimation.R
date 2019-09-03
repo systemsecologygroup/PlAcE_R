@@ -20,7 +20,7 @@
 #' @param max_sample_size integer, specifying the maximum number of
 #'   samples to use for estimating the prevalence of plastic debris.
 #'   By default 300 samples. Increasing sample sizes substantially increases
-#'   compuational time.
+#'   computational time.
 #' @param bs_rep integer, specifying the number of bootstrap replications.
 #'   By default 1000 replications.
 #' @param lower_ci numeric, specifying lower confidence interval.

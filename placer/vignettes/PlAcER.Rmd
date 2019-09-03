@@ -41,8 +41,6 @@ Allows for assessing how many samples should be considered for obtaining an appr
 ## Installation
 To install the package, type in the R console:
 
-install.packages(‘placer’)
-
 ```ruby
 install.packages('placer')
 ```
@@ -61,7 +59,7 @@ ctern[1:10,] %>% tbl_df %>% select(-nest_code) %>% kable(align=rep('c', 8), line
 Calculate the bootstrap prevalence probability of plastic based on a specific
 number of samples. Then from the resampled data the 95% confidence intervals (CI)
 are computed. To quantify the prevalence probability and the CI simply provide
-the presence/absense data, the maximum number of sample sizes to test (default 300),
+the presence/absence data, the maximum number of sample sizes to test (default 300),
 and the number of bootstrap simulations (default 1000) as:
 
 ```ruby
@@ -70,7 +68,7 @@ ternsci<-placer::plastic.ci(cterns$debris_presence, 300, 1000)#300 is the maximu
 #from 1 to 300. Increasing maximum sample size substantially increases computational time. 
 ```
 
-Plot the plastic preevalence probability and the confidence interval 
+Plot the plastic prevalence probability and the confidence interval 
 as function of sample size: 
 ```{r plots, echo=FALSE, fig.cap = "Plastic Prevalence Probability in nests of Caspian tern"}
 library(knitr)    # For knitting document and include_graphics function
@@ -83,7 +81,7 @@ ternsci$cidtf$upper_ci)
 
 ## Where to get help
 
-placer_R@gmail.com for questions about placer usage and more general questions on bootstrap simulations and applications to frequency data.
+For questions or issues about placer usage and more general questions on bootstrap simulations and applications to frequency data please use github repository (https://github.com/systemsecologygroup/PlAcE_R).
 
 
 ## References
@@ -92,4 +90,4 @@ Efron, B., & Tibshirani, R. (1993). An introduction to the Bootstrap. Boca Raton
 
 Tavares, D. C., Moura, J. F., & Merico, A. (2019). Anthropogenic debris accumulated in nests of seabirds in an uninhabited island in West Africa. Biological Conservation, 236, 586–592.
 
-Tavares, D.C., Moura, J.F., Acevedo-Trejos, E., Crawford, M., Makhado, A., Lavers, J.L., Witteveen, M., Ryan, P., Merico, A. Submitted to Methods in Ecology and Evolution. 2019.
+Tavares, D.C., Moura, J.F., Acevedo-Trejos, E., Crawford, M., Makhado, A., Lavers, J.L., Witteveen, M., Ryan, P., Merico, A. Submitted.

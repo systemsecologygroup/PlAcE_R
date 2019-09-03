@@ -10,16 +10,16 @@
 #' Plastic prevalence probability plot
 #'
 #' Plot to show the plastic prevalence probability in seabird's nests as a function of
-#' different sample sizes and thier corresponding confidence intervals.
+#' different sample sizes and their corresponding confidence intervals.
 #'
 #' @param prev_prob_mat numeric matrix, containing plastic prevalence probability
 #'   with dimensions (samples_size, bootstrap_replicates).
 #' @param sample_sizes numeric vector, containing sequence of sample size used to
 #'   estimate the confidence intervals \code{plastic.ci}.
 #' @param lower_ci numeric vector, containing values for lower confidence interval
-#'   and with the same lenght as \code{sample_sizes}.
+#'   and with the same length as \code{sample_sizes}.
 #' @param upper_ci numeric vector, containing values for upper confidence interval
-#'   and with the same lenght as \code{sample_sizes}.
+#'   and with the same length as \code{sample_sizes}.
 #' @param xlab string, label of x axis.
 #' @param ylab string, label of y axis.
 #' @param colobs color of observations.

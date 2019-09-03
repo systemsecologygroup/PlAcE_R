@@ -14,7 +14,7 @@ or no for absence of plastic, and 1 or yes for presence of plastic.}
 \item{max_sample_size}{integer, specifying the maximum number of
 samples to use for estimating the prevalence of plastic debris.
 By default 300 samples. Increasing sample sizes substantially increases
-compuational time.}
+computational time.}
 
 \item{bs_rep}{integer, specifying the number of bootstrap replications.
 By default 1000 replications.}

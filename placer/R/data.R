@@ -16,5 +16,5 @@
 #'   \item{nest_code}{nest code, add more info}
 #'   \item{debris_presence}{debris presence absence, add more info}
 #' }
-#' @references Tavares et al. 2019 Submitted to Methods in Ecology and Evolution.
+#' @references Tavares et al. Submitted.
 "ctern"

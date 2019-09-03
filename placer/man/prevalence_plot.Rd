@@ -16,10 +16,10 @@ with dimensions (samples_size, bootstrap_replicates).}
 estimate the confidence intervals \code{plastic.ci}.}
 
 \item{lower_ci}{numeric vector, containing values for lower confidence interval
-and with the same lenght as \code{sample_sizes}.}
+and with the same length as \code{sample_sizes}.}
 
 \item{upper_ci}{numeric vector, containing values for upper confidence interval
-and with the same lenght as \code{sample_sizes}.}
+and with the same length as \code{sample_sizes}.}
 
 \item{xlab}{string, label of x axis.}
 
@@ -31,7 +31,7 @@ and with the same lenght as \code{sample_sizes}.}
 }
 \description{
 Plot to show the plastic prevalence probability in seabird's nests as a function of
-different sample sizes and thier corresponding confidence intervals.
+different sample sizes and their corresponding confidence intervals.
 }
 \examples{
 binomtest <- plastic.ci(rbinom(1000,1,0.5), 30, 100)

@@ -24,6 +24,6 @@ of plastic debris for the Caspian terns in the coast
 of Senegal.
 }
 \references{
-Tavares et al. 2019 Submitted to Methods in Ecology and Evolution.
+Tavares et al. Submitted.
 }
 \keyword{datasets}
