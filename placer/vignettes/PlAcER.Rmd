@@ -16,7 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Function to install packages if not installed
 check.packages <- function(pkg){
-        new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+        #new.pkg <- pkg[!(pkg %in% find.package()[, "Package"])]
+        new.pkg <- pkg[!grepl(paste0(pkg,sep="|",collapse = ""), find.package(pkg))]
         if (length(new.pkg)) 
                 install.packages(new.pkg, dependencies = TRUE)
         sapply(pkg, require, character.only = TRUE)}

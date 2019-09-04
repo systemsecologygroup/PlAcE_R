@@ -6,3 +6,4 @@ Initial release of the package 'placer'.
 ### Bug fixes
 * 0.1.1: Corrected warnings and notes for building the package.
 * 0.1.2: Corrected warnings and notes for building the package.
+* 0.1.3: Fixes to complete CRAN submission.

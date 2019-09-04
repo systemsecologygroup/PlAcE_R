@@ -37,7 +37,8 @@ prevalence_plot <- function(prev_prob_mat, sample_sizes, lower_ci, upper_ci,
                             xlab = "Sample size",
                             ylab = "Plastic prevalence probability",
                             colobs = "grey", colci = "#64B5F6"){
-  oldpar <- par(no.readonly = T)
+  oldpar <- par(no.readonly = TRUE)
+  on.exit(par(oldpar))
   #defining plot (quadrant) parameters.
   par(mar = c(5, 4, 4, 4) + 0.3)
   #defining a sequence from 1 to 300 to the horizontal axis, and calling the simulated prevalence values (object called output).
@@ -49,5 +50,4 @@ prevalence_plot <- function(prev_prob_mat, sample_sizes, lower_ci, upper_ci,
   points(sample_sizes, lower_ci, type = "p", cex = 0.2, ylim = c(0,1), col = colci)
   #adding upper CIs to the plot.
   points(sample_sizes, upper_ci, type = "p", cex = 0.2, ylim = c(0,1), col = colci)
-  par(oldpar)
 }
